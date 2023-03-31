@@ -1,3 +1,4 @@
+#Spencer's comment
 #!/usr/bin/python
 from string import hexdigits
 from turtle import width
