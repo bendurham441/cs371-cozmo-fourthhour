@@ -18,12 +18,12 @@ from PIL import Image
 import cozmo
 import cv2
 from cozmo.util import degrees, distance_mm, speed_mmps
-import Stitching
-import random
-import Localize
-import MCLocalize
-import MotionUpdate
-import Histogram
+#import Stitching
+#import random
+#import Localize
+#import MCLocalize
+#import MotionUpdate
+#import Histogram
 import sys
 import os
 
@@ -95,12 +95,12 @@ def rotato(robot: cozmo.robot.Robot):
 # Initial set up for the panorama
 cozmo.run_program(cozmo_program)
 # Creates the panorama as Panorama.jpeg
-Stitching.run()
+#Stitching.run()
 # 'Kidnaps' the cozmo by turning a random direction
-degree = cozmo.run_program(randomTurn)
+#degree = cozmo.run_program(randomTurn)
 # Runs Monte Carlo algorithm 
-cozmo.run_program(MCLocalize.monte_carlo_localize)
+#cozmo.run_program(MCLocalize.monte_carlo_localize)
 # Completes localize, alerts with speech
-cozmo.run_program(madeItHome)
+#cozmo.run_program(madeItHome)
 # Generates histogram as hist.png
-Histogram.makeHistogram()
+#Histogram.makeHistogram()
